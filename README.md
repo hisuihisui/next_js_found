@@ -17,3 +17,8 @@ create-next-app [プロジェクト名]
 ```
 npm run dev
 ```
+
+## NextJS
+### ルーティング
+・pages 配下のファイルが対象
+
