@@ -40,3 +40,8 @@ npm run dev
 
 ### リライト
 ・router.push等で使用したダミーのURLに直接ユーザーがアクセスしたときにうまく処理する
+
+### 状態の受け渡し
+1. URLのクエリパラメータを使用する<br>
+2. Contextを使用する<br>
+　　→　_app.js内のComponentをProviderで囲む（Pageコンポーネントを呼び出す際に確実に実行されるため）
