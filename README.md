@@ -30,5 +30,10 @@ npm run dev
 ・一つの階層に一つのみ設定可能
 
 ### 指定されたパスの値を取得
-1. getSeverSideProps という関数を使用する
+1. getSeverSideProps という関数を使用する<br>
 2. RouterからuseRouterを使用する
+
+### queryプロパティ
+格納されている値は以下の２種類<br>
+1. 動的ルーティングを使用しているパラメータ<br>
+2. queryパラメータ→URLにある?以降のkey,valueの値<br>
