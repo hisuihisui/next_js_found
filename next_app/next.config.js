@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
+  // useEffectを１回のみ実行
+  reactStrictMode: false,
   // リライト設定
   // source→destinationとして処理する
   async rewrites() {
@@ -14,7 +16,7 @@ const nextConfig = {
         destination: "/multipage?step=2",
       },
     ];
-  }
-}
+  },
+};
 
 module.exports = nextConfig
