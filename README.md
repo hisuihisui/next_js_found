@@ -45,3 +45,7 @@ npm run dev
 1. URLのクエリパラメータを使用する<br>
 2. Contextを使用する<br>
 　　→　_app.js内のComponentをProviderで囲む（Pageコンポーネントを呼び出す際に確実に実行されるため）
+
+### _app.js
+・pagesフォルダ配下のコンポーネントの前にMyAppという関数コンポーネントを通る<br>
+　→サイト全体に適用させたいものはここで定義する
