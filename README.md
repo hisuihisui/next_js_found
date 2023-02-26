@@ -19,6 +19,16 @@ npm run dev
 ```
 
 ## NextJS
+### プロジェクト構成
+・/pages <br>
+　ファイルまでのパスがそのままページになる<br>
+・/styles<br>
+　グローバルに適用されるスタイルを配置<br>
+・/pages/_app.js<br>
+　ページ遷移時に必ず呼ばれる処理を記述<br>
+・next.config.js<br>
+　Next.jsの設定を記載<br>
+
 ### ルーティング
 ・pages 配下のファイルが対象<br>
 ・ファイル名やフォルダ名がそのままパスになる<br>
