@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { navList } from "../data/nav";
 
 // export default したものが表示される
 export default function Home() {
@@ -11,12 +12,27 @@ export default function Home() {
       {/* 遷移時画面のリロードが発生しない */}
       {/* <Link href="/router" as="/dummy-url"> */}
       {/* query属性：クエリパラメータの指定可能 */}
-      <Link href={{pathname:"/router", as: "/dummy-url", query: {key: "value"}}}>
+      <Link
+        href={{
+          pathname: "/router",
+          as: "/dummy-url",
+          query: { key: "value" },
+        }}
+      >
         /router
       </Link>
       <br />
       {/* 画面遷移時リロードが発生する */}
       <a href="/router"></a>
+      <ul>
+        {navList.map((item) => {
+          return (
+            <li key={item}>
+              <Link href={`/${item}`}>{item}</Link>
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 }

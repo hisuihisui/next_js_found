@@ -1,4 +1,5 @@
-import Layout from "@/components/layout/layout1";
+// import Layout from "@/components/layout/layout1";
+import Layout from "@/components/layout";
 import { AppProvider } from "@/context/AppContext";
 import "@/styles/globals.css";
 
