@@ -117,7 +117,7 @@ npm run build
 ・getServerSidePropsがあるファイルはSSRでビルドされる<br>
 　→その他はSG??
 
-### SG
+### SGのビルド
 ・exportを使用する<br>
 　→package.json にexportを登録する
 ```
@@ -140,3 +140,8 @@ npm i -D npm-run-all
 ```
 npm run export
 ```
+
+### SGの立ち上げ方
+1. build → export <br>
+2. build → start (SGとSSRのハイブリッドのような挙動) <br>
+　→fallbackのフラグが影響する
