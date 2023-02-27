@@ -23,7 +23,7 @@ export default function Home() {
       </Link>
       <br />
       {/* 画面遷移時リロードが発生する */}
-      <a href="/router"></a>
+      {/* <a href="/router"></a> */}
       <ul>
         {navList.map((item) => {
           return (

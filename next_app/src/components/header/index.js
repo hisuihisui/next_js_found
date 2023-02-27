@@ -12,7 +12,14 @@ export default function Header({ position }) {
   return (
     <header className={position === "top" ? "header" : "headerBottom"}>
       <Link href="/">
-        <Image src="/vercel.svg" alt="vercel" width={177} height={40} />
+        <Image
+          // loaderの指定
+          loader={(src) => src}
+          src="/vercel.svg"
+          alt="vercel"
+          width={177}
+          height={40}
+        />
       </Link>
       <nav>
         <ul className="nav">

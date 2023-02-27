@@ -8,6 +8,7 @@ export default function Header() {
     <header className="header">
       <Link href="/">
         <Image
+          // loaderの指定
           loader={({ src }) => src}
           src="/vercel.svg"
           alt="vercel"

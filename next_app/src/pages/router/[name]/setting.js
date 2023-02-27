@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 
 // /router/****/setting でアクセス可能
-export default function Setting({ query }) {
+// export default function Setting({ query }) {
+export default function Setting() {
   // 2. RouterからuseRouterを使用する
   const router = useRouter();
   // console.log(router);
@@ -41,9 +42,9 @@ export default function Setting({ query }) {
 // 1. getSeverSideProps という関数を使用する
 // contextのqueryというプロパティに入っている
 // SSRを使用する際に使用する
-export async function getServerSideProps(context) {
-  const { query } = context;
-  return {
-    props: { query },
-  };
-}
+// export async function getServerSideProps(context) {
+//   const { query } = context;
+//   return {
+//     props: { query },
+//   };
+// }

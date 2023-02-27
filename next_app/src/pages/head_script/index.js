@@ -29,7 +29,7 @@ export default function Page() {
       />
       <h3>jQouery loaded: {load ? "true" : "false"}</h3>
       {/* スクリプトをインラインで記述 */}
-      <Script dangerouslySetInnerHTML={{
+      <Script id="id" dangerouslySetInnerHTML={{
         __html: `console.log('Inline Script')`
       }}/>
     </>

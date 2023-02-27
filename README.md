@@ -107,5 +107,36 @@ npm run dev
 基本的なページはSG、動的に作成する必要があるページはSSRを用いる<br>
 
 ### 画面遷移時の挙動
-・他のページから遷移してきた場合、CSRとなりブラウザ上で関数が実行される
+・他のページから遷移してきた場合、CSRとなりブラウザ上で関数が実行される<br>
 ・URLに直接アクセスや画面リロードの場合はSSRとなる
+
+### ビルド
+```
+npm run build
+```
+・getServerSidePropsがあるファイルはSSRでビルドされる<br>
+　→その他はSG??
+
+### SG
+・exportを使用する<br>
+　→package.json にexportを登録する
+```
+// ビルド→エクスポート
+npm run build
+npm run export
+```
+※getServerSidePropsがあると、exportできない<br>
+・直列でコマンドを実行するには
+```
+npm i -D npm-run-all
+```
+↓
+```
+// package.json
+    "next:export": "next export",
+    "export": "run-s build next:export"
+```
+↓
+```
+npm run export
+```

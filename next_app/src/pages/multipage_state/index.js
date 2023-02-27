@@ -40,7 +40,7 @@ export default function PageLink() {
       <Link href="/multipage_state/list">リンクコンポーネント</Link>
       {/* aタグを使用すると、画面がリフレッシュされる */}
       {/* 状態がリフレッシュされる */}
-      <a href="/multipage_state/list">アンカータグ</a>
+      {/* <a href="/multipage_state/list">アンカータグ</a> */}
     </div>
   );
 }
