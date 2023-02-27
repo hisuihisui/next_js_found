@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-export default function Page({ id }) {
+export default function Page({ id, date }) {
   const router = useRouter();
   // 想定していない値へアクセスしたとき
   // ページが生成されるまでtrue
@@ -9,7 +9,7 @@ export default function Page({ id }) {
     return <h3>Loading...</h3>
   }
 
-  return <h3>このページは{id}です。</h3>;
+  return <h3>このページは{id}です。{date}</h3>;
 }
 
 // SSGで動的ルーティングを使用する際にはgetStaticPaths関数を使用
@@ -46,9 +46,17 @@ export async function getStaticProps({params}) {
   // console.log(context);
   console.log("getStaticProps executed");
 
+  const date = new Date;
+
   return {
     props: {
       id: params.id,
+      // date型を文字列へ変換
+      date: date.toJSON(),
     },
+    // ISRの設定
+    // getStaticPropsに設定する
+    // これだと5秒感覚
+    revalidate: 5,
   };
 }
