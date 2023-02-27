@@ -7,6 +7,10 @@ const nextConfig = {
   images: {
     loader: "custom",
   },
+  // URLの末尾に / をつけてアクセスするように設定
+  // export したときに ***.htmlではなく
+  // → ***というフォルダを作成し、その下にindex.htmlを生成するようになる
+  trailingSlash: true,
   // リライト設定
   // source→destinationとして処理する
   async rewrites() {
@@ -23,4 +27,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;
