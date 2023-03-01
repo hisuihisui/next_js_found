@@ -32,7 +32,7 @@ export async function getStaticPaths() {
     ],
     // 動的ルーティングで指定していない値にアクセスが来た時に影響
     // false:404へいく
-    // true:、関数コンポーネントの変更が必要
+    // true:、関数コンポーネントの変更が必要、ないページを作成する
     // "blocking":ページが生成されるまでユーザーにレスポンスをしない
     fallback: true,
   };

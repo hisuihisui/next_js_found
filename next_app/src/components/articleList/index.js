@@ -6,7 +6,7 @@ export default function ArticleList({ list }) {
       {list.map((item) => {
         return (
           <li className="listItem" key={item.id}>
-            <Link href={`/030_SG_fetch/${item.id}`}>
+            <Link href={`/SG_fetch/${item.id}`}>
               <a>
                 <article className="container">
                   <h1 className="title">
