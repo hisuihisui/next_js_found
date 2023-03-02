@@ -11,7 +11,7 @@ export default function Page({ articles }) {
   return (
     <>
       <Head>
-        <title>{article.title}</title>
+        <title>いちらん</title>
       </Head>
       <h3>フェッチ</h3>
       <ArticleList list={articles} />

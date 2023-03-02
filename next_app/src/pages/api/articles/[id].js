@@ -1,9 +1,10 @@
 import axios from "axios";
 
-const JSON_SERVER_URL = "http://localhost:4030/articles";
+const JSON_SERVER_URL = `${process.env.JSON_SERVER_URL}/articles`;
 
 export default async function handler(req, res) {
   const { method, query } = req;
+  console.log(JSON_SERVER_URL);
 
   try {
     // GETメソッドの場合のみ実行
