@@ -145,3 +145,6 @@ npm run export
 1. build → export <br>
 2. build → start (SGとSSRのハイブリッドのような挙動) <br>
 　→fallbackのフラグが影響する
+
+### API Routes
+・pages/api/ にファイルをおくと簡易的なAPIとなる
